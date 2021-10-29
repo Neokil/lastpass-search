@@ -85,7 +85,6 @@ func (w *Window) Show() error {
 			keystr = "ß"
 		}
 		if w.KeypressFunc != nil {
-			fmt.Println(keystr)
 			w.KeypressFunc(keystr)
 		}
 	}).Connect(w.x, w.wnd.Id)
